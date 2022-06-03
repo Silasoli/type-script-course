@@ -7,7 +7,7 @@ interface IAnimal {
     executarRugido(alturaEmDecibeis: number): void;
 }
 
-const animal1: IAnimal = {
+const animal: IAnimal = {
     nome: 'Elefante',
     tipo: 'terrestre',
     executarRugido: (alturaEmDecibeis) => (`${alturaEmDecibeis}`)
@@ -23,7 +23,7 @@ interface IFelino extends IAnimal {
     visaoNortuna: boolean;
 }
 
-const felino1: IFelino = {
+const felino: IFelino = {
     nome: 'Leão',
     tipo: 'terrestre',
     visaoNortuna: true,
