@@ -1,13 +1,13 @@
 //types
 //interfaces
 
-interface IAnimal {
+interface IAnimal1 {
     nome: string;
     tipo: 'terrestre' | 'aquático';
     executarRugido(alturaEmDecibeis: number): void;
 }
 
-const animal: IAnimal = {
+const animal: IAnimal1 = {
     nome: 'Elefante',
     tipo: 'terrestre',
     executarRugido: (alturaEmDecibeis) => (`${alturaEmDecibeis}`)
@@ -19,11 +19,11 @@ const animal: IAnimal = {
 //     tipo: 'voador'
 // }
 
-interface IFelino extends IAnimal {
+interface IFelino1 extends IAnimal1 {
     visaoNortuna: boolean;
 }
 
-const felino: IFelino = {
+const felino: IFelino1 = {
     nome: 'Leão',
     tipo: 'terrestre',
     visaoNortuna: true,
